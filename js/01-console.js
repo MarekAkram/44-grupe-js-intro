@@ -1,7 +1,7 @@
 console.clear();
 
 /*
-CONSOLE - spaisdiname norima rezultata/-us
+CONSOLE - spausdiname norima rezultata/-us
 */
 
 console.log(1);
