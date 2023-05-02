@@ -23,7 +23,7 @@ console.log(vardas1);
 const vardas2 = vardai[1];
 console.log(vardas2);
 
-console.log('--------------');
+console.log('-------');
 console.log(vardai[0]);
 console.log(vardai[1]);
 console.log(vardai[2]);
@@ -33,7 +33,7 @@ console.log(vardai[10000000]);
 console.log(vardai[-1]);
 console.log(vardai[1.5]);
 
-console.log('--------------');
+console.log('--------');
 
 //              0  1  2  3  4
 const marks = [10, 2, 8, 4, 6];
