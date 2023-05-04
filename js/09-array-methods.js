@@ -27,7 +27,7 @@ console.log(marks.at(3));
 
 marks.push(5);
 
-console.log('AT -----------------');
+console.log('AT ---------');
 
 const paskutinePozicija = marks.length - 1;
 console.log(marks);
@@ -42,7 +42,7 @@ console.log(marks.at(-5));
 //  0  1  2
 // [1, 2, 3]
 
-console.log('INCLUDE -----------------');
+console.log('INCLUDE ---------');
 
 console.log(marks);
 console.log(1, marks.includes(1));
@@ -69,7 +69,7 @@ console.log(marks.indexOf(777));
 console.log(marks.indexOf(4));
 console.log(marks.indexOf(-1));
 
-console.log('JOIN -----------------');
+console.log('JOIN -----');
 const visiPazymiai = marks.join();
 console.log(visiPazymiai);
 console.log(typeof visiPazymiai);
@@ -80,7 +80,7 @@ console.log(visiPazymiai2);
 const visiPazymiai3 = marks.join(' -==- ');
 console.log(visiPazymiai3);
 
-console.log('REVERSE -----------------');
+console.log('REVERSE --------');
 
 const skaiciai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(skaiciai);
@@ -88,7 +88,7 @@ console.log(skaiciai);
 skaiciai.reverse();
 console.log(skaiciai);
 
-console.log('SLICE -----------------');
+console.log('SLICE ------');
 console.log(skaiciai);
 console.log(skaiciai.slice(0));
 console.log(skaiciai.slice(1));
@@ -99,7 +99,7 @@ console.log(skaiciai.slice(2, 5));
 console.log(skaiciai.slice(2, -3));
 console.log(skaiciai.slice(3, -3));
 
-console.log('SPLICE -----------------');
+console.log('SPLICE --------');
 console.log(skaiciai);
 console.log(skaiciai.splice(2, 0, 'X'));
 console.log(skaiciai);
