@@ -3,9 +3,12 @@ console.clear();
 IF - palyginimas
 
 Palyginimo operatoriai:
-visi: >, <, >=, <=, ==, ===,
-naudotini: >, <, >=, <=,  ===,
-nenaudotini: ==,
+visi: >, <, >=, <=, ==, ===, !=, !==,
+naudotini: >, <, >=, <=, ===, !==
+nenaudotini: ==, !=
+
+Loginiai operatoriai:
+&& (and), || (or), ! (not)
 
 Kodo sablonai:
 if () {}
@@ -34,7 +37,7 @@ if (userAge >= ageLimit) {
     console.log(`dar palauk ${ageLimit - userAge} metu...`);
 }
 
-console.log('------------------');
+console.log('-----------');
 const diena = 8;
 
 console.log('START');
@@ -59,7 +62,7 @@ if (diena === 1) {
 
 console.log('END');
 
-console.log('-----------------');
+console.log('---------');
 
 // kodo nestinimas
 
@@ -86,7 +89,7 @@ if (arSvieciaSaule) {
 
 console.log(kaDaryti);
 
-console.log('------------------');
+console.log('--------');
 
 console.log('START');
 
@@ -124,7 +127,7 @@ if (day === 1) {
 
 console.log('END');
 
-console.log('-----------------------');
+console.log('------------');
 
 const dd = 1;
 let kokiaDiena = 'tokia diena neegzistuoja';
@@ -170,3 +173,89 @@ console.log(kokiaSavaitesDiena(1));
 console.log(kokiaSavaitesDiena(2));
 console.log(kokiaSavaitesDiena(7));
 console.log(kokiaSavaitesDiena(8));
+
+console.log('---------');
+
+if (777 !== 8) {
+    console.log('nelygu');
+} else {
+    console.log('lygu');
+}
+
+console.clear();
+
+if ('888' === 888) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
+
+console.log('labas' * '2');
+
+// LOGINIAI OPERATORIAI
+
+if (4 > 2) {
+    if (8 < 20) {
+        console.log('>>> and 1');
+    }
+}
+
+if (4 > 2 && 8 < 20) {
+    console.log('>>> and 2');
+}
+
+if (1 < 0 || 2 < 4) {
+    console.log('>>> arba');
+}
+
+if ((0 === 0 || 2 === 8) && 4 === 4) {
+    console.log('mix');
+}
+
+// (0 === 0 || 2 === 8) && 4 === 4
+// (true || 2 === 8) && 4 === 4
+// (true || false) && 4 === 4
+// true && 4 === 4
+// true && true
+// true
+
+console.log('------');
+
+const a = true;
+
+if (!a) {
+    console.log('taip');
+} else {
+    console.log('ir ne');
+}
+
+const error = true;
+
+if (!error) {
+    console.log('all good 👍');
+} else {
+    console.log('ERROR');
+}
+
+console.log('----');
+
+// visi skaiciai - TRUE, isskyrus 0 ir NaN
+// undefined - FALSE
+// null - FALSE
+// visi string - TRUE, isskyrus tuscias
+// visos function - TRUE
+// visi array - TRUE
+// visi object - TRUE
+
+function empty() { }
+
+const nameInputValue = '';
+
+if (!nameInputValue) {
+    console.log('KAZKAS...');
+} else {
+    console.log('Ne Kazka...');
+}
+
+const negative = !!nameInputValue;
+console.log(negative);
