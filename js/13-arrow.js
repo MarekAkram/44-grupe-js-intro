@@ -114,43 +114,4 @@ console.log(`7 < 5 = ${calc(7, "<", 5)}`);
 // aboutStr('labas', 'uppercaseCount')
 // aboutStr('labas', 'lowercaseCount')
 
-console.clear();
 
-function aboutStr(word, operation) {
-  function upperCaseCount(word1) {
-    for (const char of word1) {
-      let count = 0;
-      if (char === char.toUpperCase()) {
-        count++;
-      }
-      return count;
-    }
-  }
-  const funcs = {
-    first: (word) => word.charAt(0),
-    last: (word) => word.charAt(word.length - 1),
-    mid: (word) => word.charAt(word.length / 2),
-    size: (word) => word.length,
-    lowercase: (word) => word.toLowerCase(),
-    uppercase: (word) => word.toUpperCase(),
-    uppercaseCount: (word) => upperCaseCount(word),
-    lowercaseCount: (word) =>
-      Array.from(word).reduce((sum, ele) => {
-        if (ele === ele.toLowerCase()) {
-          sum++;
-        }
-        return sum;
-      }, 0),
-  };
-
-  return funcs[operation](word);
-}
-
-console.log(aboutStr("labas", "first"));
-console.log(aboutStr("labas", "last"));
-console.log(aboutStr("labas", "mid"));
-console.log(aboutStr("labas", "size"));
-console.log(aboutStr("labas", "lowercase"));
-console.log(aboutStr("labas", "uppercase"));
-console.log(aboutStr("labas", "uppercaseCount"));
-console.log(aboutStr("labas", "lowercaseCount"));
